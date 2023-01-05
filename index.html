@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+ <html lang='en'>
+   <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+    <div class="wrapper">
+ <h1 id="title">How has your life changed after Practicum?‎</h1>
+     <p id="description">Hello, graduate of the Interface Design course! We want to know how you are doing and what you think about your learning experience. Please, fill in the questionnaire. It is going to take approximately 5 minutes.</p>
+     <form id="survey-form">
+       <div class="form-group">
+        <label id="name-label" for="name">
+          <span class="question">Full Name</span>
+          <input class="input" id="name" name="name" type="text" placeholder="Enter your first and last name" required /></label>
+        </div>
+      <div class="form-group">
+        <label id="email-label" for="email">
+          <span class="question">Email</span>
+          <input class="input" id="email" name="email" type="email" placeholder="Enter the e-mail that you used for taking the course" required /></label>
+      </div>
+      <div class="form-group">
+        <label" id="number-label" for="number">
+          <span class="question">Group Number</span>
+          <input class="input" id="number" name="number" type="number" min="1" max="30" placeholder="You can find it in your profile" /></label>
+      </div>
+      <div class="form-group">
+         <label for="dropdown">
+         <span class="question">Would you take another course from Practicum?</span>
+          <select class="input" id="dropdown" name="dropdown" required>
+             <option value="" selected disabled>(select one)</option>
+            <option value="1">Definitely</option>
+            <option value="2">Maybe</option>
+            <option value="3">Not sure</option>
+          </select>
+         </label>
+      </div>
+      <div class="form-group">
+          <p class="question">On the scale from 1 (not at all likely) to 5 (extremely likely), how likely are you to recommend using Practicum to a friend or colleague?</p>
+         <div class="radio"> 
+          <label class='radio-button' for="r1"><input class="rbutton" value="r1" id="r1" type="radio" name="scale" /> 1</label>
+          <label class='radio-button' for="r2"><input class="rbutton" value="r2" id="r2" type="radio" name="scale" /> 2</label>
+          <label class='radio-button' for="r3"><input class="rbutton" value="r3" id="r3" type="radio" name="scale" /> 3</label>
+          <label class='radio-button' for="r4"><input class="rbutton" value="r4" id="r4" type="radio" name="scale" /> 4</label>
+          <label class='radio-button' for="r5"><input class="rbutton" value="r5" id="r5" type="radio" name="scale" /> 5 </label>
+        </div>
+       </div>
+       <div class="form-group">
+         <p class="question">How did you put what you learned into practice? (check all that apply)</p>
+          <label class="check" for="job"><input class="checkbox".  value="job"            id="job"        type="checkbox" name="practice" /> Landed a design job</label>
+          <label class="check" for="internship"><input class="checkbox" value="internship" id="internship" type="checkbox" name="practice" /> Found a design internship</label>
+          <label  class="check" for="new-role"><input class="checkbox"  value="new-role" id="new-role" type="checkbox" name="practice" /> Got a new design role in my company</label>
+          <label class="check" for="freelance"><input class="checkbox"  value="freelance" id="freelance" type="checkbox" name="practice" /> Started freelancing</label>
+          <label class="check" for="pet-projects"><input class="checkbox" value="pet-projects" id="pet-projects" type="checkbox" name="practice" /> Did a few pet-projects</label>
+        <label class="check" for="no-change"><input class="checkbox"  value="no-change" id="no-change" type="checkbox" name="practice" /> Didn't want to change anything / Wasn't looking for anything</label> 
+         <label class="check" for="no-practice"><input class="checkbox" value="no-practice" id="no-practice" type="checkbox" name="practice" /> Couldn't put new knowledge into practice</label> 
+       </div>
+       <div class="form-group">
+       <label for="comment">
+         <span class="question">Any comments or suggestions?</span>
+          <textarea class="comment" placeholder="Enter your comment here" id="comment" name="comment" rows="3" cols="30"></textarea>
+        </label>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+      </div>
+   </body>  
+ </html>
